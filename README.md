@@ -14,7 +14,7 @@ for more info about the repo please check [pdf slides](https://github.com/hazemh
 <img src="https://github.com/hazemhosny/ArabicDialectSentimenalAnalysis/blob/main/POST_Example2.png" alt="BotExample" width="850"/>
 
 ## Run FastAPI Server
-1. first need to download related packages in conda envirnoment:
+1. First need to download related packages in conda envirnoment
 <pre>
 PyTorch
 Pandas
@@ -26,14 +26,15 @@ emoji
 nltk
 </pre>
 
-2. make sure you activate env where all packages are downloaded.
-3. run `ModelTraining_ML.ipynb`, `ModelPrediction-AraBert.ipynb` to get models pickle files
+2. Make sure you activate env where all packages are downloaded.
+3. Run `ModelTraining_ML.ipynb`, `ModelPrediction-AraBert.ipynb` to get models pickle files
 4. After that go the saved pickle files and copy (or cut) paste to static folder for the FastAPI server within folders for ML models, and other for AraBERT model.
 ```bash
 static
 │   ├───ML_models
 │   └───output_dir
 ```
-5. run `python main.py`
-6. after running your server go to `localhost:5000/docs`, and **enjoy your server app**
+5. Run `python main.py`
+6. After running your server go to `localhost:5000/docs` in browser, and try out different POST methods with different text
+7. **Enjoy your server app**
 
